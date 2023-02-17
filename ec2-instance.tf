@@ -9,9 +9,15 @@ terraform {
 }
 
 # Provider Block
+#provider "aws" {
+  #profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
+  #region  = "us-west-2"
+#}
+
 provider "aws" {
-  profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
-  region  = "us-west-2"
+  shared_config_files      = ["/home/ec2-user/.aws/config"]
+  shared_credentials_files = ["/home/ec2-user/.aws/credentials"]
+  profile                  = "default"
 }
 
 # Resource Block
