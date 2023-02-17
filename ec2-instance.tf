@@ -16,7 +16,7 @@ terraform {
 
 provider "aws" {
   region                   = "us-west-2"
-  shared_credentials_file  = "/home/ec2-user/.aws/credentials"
+  shared_credentials_files = ["/home/ec2-user/.aws/credentials"]
   profile                  = "default"  
 }
 
