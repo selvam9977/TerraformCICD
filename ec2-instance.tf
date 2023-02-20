@@ -13,8 +13,6 @@ provider "aws" {
   region                   = "us-west-2"
   #shared_credentials_files = ["/home/ec2-user/.aws/credentials"]
   #profile                  = "default"  
-  access_key = "AKIA2PWAN5QRW63QGY4Y"
-  secret_key = "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"  
 }
 
 # Resource Block
